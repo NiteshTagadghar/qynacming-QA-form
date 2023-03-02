@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import logo from './logo.svg';
+import  {  useState } from 'react';
 import './App.css';
 import { MyGlobalContext } from './store/context';
 import { allQuestions } from './Utils/Quesetions';
@@ -10,8 +9,6 @@ import NextButton from './Components/NextButton';
 
 function App() {
 
-  // const result: any = useContext(currentQuestionContext)
-  // const [, , result]:any=React.useContext(currentQuestionContext)
   const [currentQuestion, setCurrentQuestion] = useState<any>(0)
   const [result, setResult] = useState<any>([])
 

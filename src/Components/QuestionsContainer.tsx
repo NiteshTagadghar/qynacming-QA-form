@@ -1,4 +1,3 @@
-import React, { useContext } from 'react'
 import { useGlobalContext } from '../store/context'
 import { allQuestions } from '../Utils/Quesetions'
 
@@ -6,9 +5,6 @@ function QuestionsContainer() {
 
     const {currentQuestion}:any = useGlobalContext()
 
-
-
-    console.log(currentQuestion, 'quetions in container')
     return (
         <div className="QuestionsContainer">
       {/* {displaying the current question} */}

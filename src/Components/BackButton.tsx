@@ -1,11 +1,11 @@
-import React from 'react'
+
 import { useGlobalContext } from '../store/context';
 
 function BackButton() {
 
 
         // state from context file
-        const { currentQuestion, setCurrentQuestion, result, setResult }: any = useGlobalContext()
+        const { currentQuestion, setCurrentQuestion }: any = useGlobalContext()
 
         //update currentquestion state for previous question
         const handleBackButton = () => {
